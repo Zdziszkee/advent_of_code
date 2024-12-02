@@ -50,7 +50,7 @@ fn main() {
 
     let mut sum: u64 = 0;
     for (left, right) in left_numbers.iter().zip(right_numbers.iter()) {
-        let distance = (*left as i32 - *right as i32).abs();
+        let distance = left.abs_diff(*right);
         sum += distance as u64;
     }
     println!("{}", sum);
