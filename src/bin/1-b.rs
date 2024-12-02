@@ -3,7 +3,7 @@ use std::fs::File;
 use std::io::{BufRead, BufReader};
 
 fn main() {
-    let path = "../../resources/1-2.txt";
+    let path = "../../resources/1.txt";
 
     let file = match File::open(path) {
         Ok(file) => file,
